@@ -1,0 +1,64 @@
+# --- Secretos / configuración local ---
+/app/config/parameters.php
+/.env
+/.env.local
+/.env.local.php
+/.env.*.local
+
+# --- node_modules (por si aparecen al instalar tooling de temas) ---
+/node_modules/
+**/node_modules/
+
+# --- Caché y runtime de Symfony (PrestaShop 9) ---
+/var/cache/*
+!/var/cache/.htaccess
+/var/logs/*
+!/var/logs/.htaccess
+/var/sessions/*
+!/var/sessions/.htaccess
+/var/modules/*
+!/var/modules/.htaccess
+
+# --- Caché legacy de PrestaShop ---
+/cache/*
+!/cache/index.php
+!/cache/.htaccess
+/XMLFeed.cache
+
+# --- Imágenes autogeneradas (miniaturas de productos, categorías, etc.) ---
+/img/c/*
+/img/co/*
+/img/e/*
+/img/l/*
+/img/m/*
+/img/os/*
+/img/p/*
+/img/pr/*
+/img/s/*
+/img/st/*
+/img/su/*
+/img/t/*
+/img/tmp/*
+!/img/*/index.php
+!/img/*/.htaccess
+
+# --- Contenido subido por usuarios / exportaciones ---
+/upload/*
+!/upload/index.php
+!/upload/.htaccess
+/download/*
+!/download/index.php
+!/download/.htaccess
+/adminliore/export/*
+/adminliore/import/*
+/adminliore/backups/*
+
+# --- Páginas de error autogeneradas ---
+/error500.html
+
+# --- IDE / OS ---
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+*.log
